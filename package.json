@@ -1,8 +1,14 @@
 {
   "name": "auto-module-name-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Overwrites module id with module name in webpack module magic object",
-  "keywords": ["webpack", "amd", "module.id", "module", "requirejs"],
+  "keywords": [
+    "webpack",
+    "amd",
+    "module.id",
+    "module",
+    "requirejs"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -11,7 +17,7 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "", 
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
