@@ -5,7 +5,14 @@ let loader = require('../index');
 describe('auto amd id', () => {
 	let moduleWithoutId = 'define("name", ["dependency1", "dependency2"], function(dep1, dep2) { console.log(module); }';
 	let filename = 'dir1/dir2/dir3/file.js';
-	let context = {resourcePath: filename};
+	let cacheable = false;
+	let context = {resourcePath: filename, cacheable: () => { cacheable = true; }};
+
+	it('is cacheable', () => {
+		loader.call(context, '');
+
+		expect(cacheable).to.be.equal(true);
+	});
 
 	it('adds modules name to files that uses module', () => {
 		let result = loader.call(context, moduleWithoutId);
