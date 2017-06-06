@@ -1,6 +1,6 @@
 {
   "name": "auto-module-name-loader",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Overwrites module id with module name in webpack module magic object",
   "keywords": [
     "webpack",
