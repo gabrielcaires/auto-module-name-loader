@@ -15,12 +15,14 @@
     "url": "https://github.com/gabrielcaires/auto-module-name-loader"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build-example": "cd example; webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.0"
+    "mocha": "^3.1.0",
+    "webpack": "^2.6.1"
   }
 }
